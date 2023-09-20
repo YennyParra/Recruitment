@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
-  get 'candidate/index'
+  #get 'candidate/index'
   resources :joboffers
 
   devise_for :users
 
   resources :candidates
+  resources :reactions
   
   resources :admin, only:[:index, :create, :update]
   

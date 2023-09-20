@@ -4,7 +4,7 @@ before_action :authenticate_user!
 before_action :authorize_admin!
 
   def index
-    @user = User.all
+    @users = User.all
     @user = User.new
   end
 
@@ -43,4 +43,3 @@ end
 def set_user
   @user = User.find(params[:id])
   end
-end

@@ -10,7 +10,7 @@
       <% if user_signed_in? %>
         <%= link_to "admin", admin_index_path if current_user.admin? %>
                <%= link_to "Joboffers", joboffers_path %>
-        <%= link_to "Mis Pstulaciones", candidates_index_path %>   
+                   <%= link_to "Mis Pstulaciones", candidates_path %>   
         <%else%>
                 Inicia sesión o registrate
             <% end %>

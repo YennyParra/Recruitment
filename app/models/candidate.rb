@@ -1,3 +1,3 @@
 class Candidate < ApplicationRecord
-    has_and_belong_to_many :joboffer 
+    has_and_belongs_to_many :joboffer 
 end
