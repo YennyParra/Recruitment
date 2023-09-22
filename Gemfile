@@ -75,3 +75,4 @@ end
 
 gem "devise", "~> 4.9"
 gem "figaro"
+gem "aws-sdk-s3"

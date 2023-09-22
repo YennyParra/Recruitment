@@ -22,6 +22,8 @@ class CandidatesController < ApplicationController
   # POST /candidates or /candidates.json
   def create
     @candidate = Candidate.new(candidate_params)
+      @candidate.user_id = current_user.id
+      @candidate.joboffer_id = params[:joboffer_id]
 
     respond_to do |format|
       if @candidate.save
